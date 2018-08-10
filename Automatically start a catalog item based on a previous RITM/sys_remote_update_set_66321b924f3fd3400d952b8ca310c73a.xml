@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-08-10 23:25:17">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>IET Automatically fill out catalog item based off previous item</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>ef71db524f3fd3400d952b8ca310c720</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-10 23:25:17</sys_created_on>
+<sys_id>66321b924f3fd3400d952b8ca310c73a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-10 23:25:17</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_set_0d8153924f3fd3400d952b8ca310c7b5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set"><item_option_new_set action="INSERT_OR_UPDATE"><description>Include this variable set and ff the URL contains sysparm_ritm then the form will automatically fill out all the fields with the referenced values</description><display_title>false</display_title><layout>normal</layout><name>Fill out form automatically with previous RITM's values</name><order>100</order><sys_class_name>item_option_new_set</sys_class_name><sys_created_by>admin-eduque</sys_created_by><sys_created_on>2018-08-10 23:22:26</sys_created_on><sys_id>0d8153924f3fd3400d952b8ca310c7b5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Fill out form automatically with previous RITM's values</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_set_0d8153924f3fd3400d952b8ca310c7b5</sys_update_name><sys_updated_by>admin-eduque</sys_updated_by><sys_updated_on>2018-08-10 23:22:26</sys_updated_on><title/></item_option_new_set></record_update>]]></payload>
+<payload_hash>2081889669</payload_hash>
+<remote_update_set display_value="IET Automatically fill out catalog item based off previous item">66321b924f3fd3400d952b8ca310c73a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-10 23:25:17</sys_created_on>
+<sys_id>2e321b924f3fd3400d952b8ca310c73a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1652625f3c40000001</sys_recorded_at>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-10 23:25:17</sys_updated_on>
+<table/>
+<target_name>Fill out form automatically with previous RITM's values</target_name>
+<type>Variable Set</type>
+<update_domain>global</update_domain>
+<update_guid>3c919b925c3fd340fe3a3803ac40f5c7</update_guid>
+<update_guid_history>3c919b925c3fd340fe3a3803ac40f5c7:2081889669</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>catalog_script_client_4a91db924f3fd3400d952b8ca310c758</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;set&lt;/applies_to&gt;&lt;cat_item/&gt;&lt;cat_variable/&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;messages/&gt;&lt;name&gt;Get RITM variables and set values&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[//If the URL contains sysparm_ritm then fill in all the fields with the referenced values
+
+function onLoad() {
+	var ritmReference = getParameterValue('sysparm_ritm');
+
+	if (!ritmReference) return;
+
+	var ga = new GlideAjax('ritm_variable_collector');
+	ga.addParam('sysparm_name', 'getVariables');
+	ga.addParam('sysparm_ritm', ritmReference);
+	ga.getXML(updateForm);
+}
+
+function getParameterValue(name) {
+    //parse the URL
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regexS = "[\\?&amp;]" + name + "=([^&amp;#]*)";
+    var regex = new RegExp(regexS);
+    var results = regex.exec(top.location);
+    if (results == null) {
+        return "";
+    } else {
+        return unescape(results[1]);
+    }
+}
+
+function updateForm(response) {
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+    results = JSON.parse(answer);
+	for (var key in results){
+		g_form.setValue(key, results[key]);
+	}
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin-eduque&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-10 23:23:00&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4a91db924f3fd3400d952b8ca310c758&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Get RITM variables and set values&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_4a91db924f3fd3400d952b8ca310c758&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin-eduque&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-08-10 23:23:00&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;variable_set display_value="Fill out form automatically with previous RITM's values"&gt;0d8153924f3fd3400d952b8ca310c7b5&lt;/variable_set&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1237344533</payload_hash>
+<remote_update_set display_value="IET Automatically fill out catalog item based off previous item">66321b924f3fd3400d952b8ca310c73a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-10 23:25:17</sys_created_on>
+<sys_id>6a321b924f3fd3400d952b8ca310c73a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16526267ade0000001</sys_recorded_at>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-10 23:25:17</sys_updated_on>
+<table/>
+<target_name>Get RITM variables and set values</target_name>
+<type>Catalog Client Scripts</type>
+<update_domain>global</update_domain>
+<update_guid>59b11f925a3fd34046ec3140c82dfd71</update_guid>
+<update_guid_history>59b11f925a3fd34046ec3140c82dfd71:1237344533</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_31f19f924f3fd3400d952b8ca310c7d4</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.ritm_variable_collector&lt;/api_name&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description&gt;Call this script include via the URL parameter including a referenced RITM's sys_id and it will return all the variables of that ritm.&lt;/description&gt;&lt;name&gt;ritm_variable_collector&lt;/name&gt;&lt;script&gt;&lt;![CDATA[//Call this script include via the URL parameter including a referenced RITM's sys_id and it will return all the variables of that ritm.
+
+var ritm_variable_collector = Class.create();
+ritm_variable_collector.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+    getVariables: function () {
+
+        //The glideajax should have provided the sys_id of the RITM to retrieve
+        var referencedSysID = this.getParameter('sysparm_ritm');
+        var results = {};
+
+        //find the RITM
+        var gr = new GlideRecord('sc_req_item');
+        gr.get(referencedSysID);
+
+        //return all its variables and their values
+        for (var key in gr.variables) {
+            results[key] = gr.variables[key]+"";
+        }
+
+        //encode the object and pass it back to the client
+		results = JSON.stringify(results);
+        return results;
+    },
+
+    type: 'ritm_variable_collector'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin-eduque&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-10 23:24:22&lt;/sys_created_on&gt;&lt;sys_id&gt;31f19f924f3fd3400d952b8ca310c7d4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;ritm_variable_collector&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_31f19f924f3fd3400d952b8ca310c7d4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin-eduque&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-08-10 23:24:22&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-755643401</payload_hash>
+<remote_update_set display_value="IET Automatically fill out catalog item based off previous item">66321b924f3fd3400d952b8ca310c73a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-10 23:25:17</sys_created_on>
+<sys_id>ee321b924f3fd3400d952b8ca310c73a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1652627b9db0000001</sys_recorded_at>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-10 23:25:17</sys_updated_on>
+<table/>
+<target_name>ritm_variable_collector</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>d10253928c3fd34022c5df5974c7df89</update_guid>
+<update_guid_history>d10253928c3fd34022c5df5974c7df89:-755643401</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
