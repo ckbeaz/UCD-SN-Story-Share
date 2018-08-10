@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-08-10 23:33:18">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>IET Task Status Portal Page</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>c4d25f524f3fd3400d952b8ca310c74b</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-10 23:33:17</sys_created_on>
+<sys_id>3f04d7564f3fd3400d952b8ca310c771</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-10 23:33:17</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_60b31fd24f3fd3400d952b8ca310c788</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">60b31fd24f3fd3400d952b8ca310c786</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin-eduque</sys_created_by><sys_created_on>2018-08-10 23:31:41</sys_created_on><sys_id>60b31fd24f3fd3400d952b8ca310c788</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_60b31fd24f3fd3400d952b8ca310c788</sys_update_name><sys_updated_by>admin-eduque</sys_updated_by><sys_updated_on>2018-08-10 23:31:41</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>-1901693251</payload_hash>
+<remote_update_set display_value="IET Task Status Portal Page">3f04d7564f3fd3400d952b8ca310c771</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-10 23:33:17</sys_created_on>
+<sys_id>3304d7564f3fd3400d952b8ca310c772</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165262e6ea00000001</sys_recorded_at>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-10 23:33:17</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>e0b31fd27c3fd3409c664affc4910289</update_guid>
+<update_guid_history>e0b31fd27c3fd3409c664affc4910289:-1901693251</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_page_df33dbd24f3fd3400d952b8ca310c7a3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>task_status</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>admin-eduque</sys_created_by><sys_created_on>2018-08-10 23:29:49</sys_created_on><sys_id>df33dbd24f3fd3400d952b8ca310c7a3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>task_status</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_page_df33dbd24f3fd3400d952b8ca310c7a3</sys_update_name><sys_updated_by>admin-eduque</sys_updated_by><sys_updated_on>2018-08-10 23:29:49</sys_updated_on><title>Task Status</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=df33dbd24f3fd3400d952b8ca310c7a3"/></record_update>]]></payload>
+<payload_hash>1224933077</payload_hash>
+<remote_update_set display_value="IET Task Status Portal Page">3f04d7564f3fd3400d952b8ca310c771</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-10 23:33:17</sys_created_on>
+<sys_id>3f04d7564f3fd3400d952b8ca310c772</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165262cb7dd0000001</sys_recorded_at>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-10 23:33:17</sys_updated_on>
+<table/>
+<target_name>task_status</target_name>
+<type>Page</type>
+<update_domain>global</update_domain>
+<update_guid>c9431fd2273fd34017f90005283d5b20</update_guid>
+<update_guid_history>c9431fd2273fd34017f90005283d5b20:1224933077</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_61b313d24f3fd3400d952b8ca310c74f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">60b31fd24f3fd3400d952b8ca310c788</sp_column><sp_widget display_value="Task Status">fa27c6ee4fdfd3000d952b8ca310c757</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin-eduque</sys_created_by><sys_created_on>2018-08-10 23:31:46</sys_created_on><sys_id>61b313d24f3fd3400d952b8ca310c74f</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_61b313d24f3fd3400d952b8ca310c74f</sys_update_name><sys_updated_by>admin-eduque</sys_updated_by><sys_updated_on>2018-08-10 23:31:46</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=61b313d24f3fd3400d952b8ca310c74f"/></record_update>]]></payload>
+<payload_hash>2124784684</payload_hash>
+<remote_update_set display_value="IET Task Status Portal Page">3f04d7564f3fd3400d952b8ca310c771</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-10 23:33:17</sys_created_on>
+<sys_id>7b04d7564f3fd3400d952b8ca310c772</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165262e7f310000001</sys_recorded_at>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-10 23:33:17</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>e9b313d2fb3fd34031f5cdfc35e83f50</update_guid>
+<update_guid_history>e9b313d2fb3fd34031f5cdfc35e83f50:2124784684</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_fa27c6ee4fdfd3000d952b8ca310c757</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function(spUtil, $scope) {
+  /* widget controller */
+  var c = this;
+	spUtil.recordWatch($scope, c.data.table_name, c.data.encoded_query, function(name, data) {
+		console.log(data);
+		console.log(name);
+		c.server.update();
+	})
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.widget {
+  background-color: white;
+  border: 25px solid white;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 25px;
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: separate;
+  width: 100%;
+}
+
+th, td {
+  border: 0px solid black;
+  padding: 2px;
+  border-bottom: 1px solid black;
+  width: 40px;
+}
+
+.footerquery {
+  color: #BBB;
+  background: transparent;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;task-status&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Task Status&lt;/name&gt;&lt;option_schema&gt;[{"displayValue":"Table","name":"table","default_value":"incident","label":"Table","type":"reference","value":"sys_db_object","ed":{"reference":"sys_db_object"}},{"hint":"","name":"encoded_query","default_value":"active=true^assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe","label":"Encoded Query","type":"string"},{"displayValue":"Choice","hint":"Values separated by commas, no spaces","name":"state_order","display_value_list":[],"label":"State Order","type":"string","value":"sys_choice","ed":{"reference":"sys_choice"}}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+
+	//get table from widget options
+	var table_name;
+	if ($sp.getParameter('table')){
+		table_name = $sp.getParameter('table');
+	} else {
+		var table_namegr = new GlideRecord('sys_db_object');
+		table_namegr.get(options.table); 
+		table_name = table_namegr.name.toString();
+	}
+	data.table_name = table_name;
+
+	//check to see if an encoded query was provided
+	var encoded_query = $sp.getParameter('query') || options.encoded_query;
+	data.encoded_query = encoded_query;
+	data.tooltip = 'Searching ' + table_name + ' with query: ' + encoded_query+'.';//temp
+
+	//retrieve records according to the widget options query
+	var gr = new GlideRecord(table_name);
+	if ($sp.getParameter('table') &amp;&amp; ! $sp.getParameter('query')){
+		data.tooltip = 'Searching ' + table_name + '.';//temp
+	} else {
+		gr.addEncodedQuery(encoded_query);
+	}
+	gr.orderByDesc('number');
+	gr.setLimit(100);
+	gr.query();
+	data.option1 = gr.getRowCount(); //temp
+
+	//if the limit was reached
+	if (gr.getRowCount() == 100) {
+		data.limit_reached = 'true';
+	} else {
+		data.record_count = gr.getRowCount();
+	}
+
+	//declare objects
+	data.records = [];
+	data.state_array = [];
+	data.state_columns = [];
+	var i;
+
+	//if a manual state order was given. build the state array now
+	var states_from_options;
+	if ($sp.getParameter('state_order')){
+		states_from_options = $sp.getParameter('state_order').split(',');
+	} else if (options.state_order){
+		states_from_options = options.state_order.split(',');
+	}
+	if (states_from_options){
+		for (i = 0; i &lt; states_from_options.length; i++){
+			data.state_array.push(states_from_options[i]);
+		}
+	}
+
+
+	//for each record, get its information
+	while (gr.next()){
+		var record = {};
+		record.number = gr.number + '';
+		record.short_description = gr.short_description + '';
+		record.state = gr.state + '';
+		record.state_value = gr.state.getDisplayValue() + '';
+
+		//if the state is a new state we've seen, add it to the table builder
+		if (!options.state_order &amp;&amp; data.state_array.indexOf(gr.state.toString()) == -1){
+			data.state_array.push(gr.state.toString());
+		}
+
+		//add the record to the data object for display
+		data.records.push(record);
+	}
+
+	//figure out the column state names
+	if (!states_from_options) data.state_array.sort();
+	for (i = 0; i &lt; data.state_array.length; i++){
+		var columnsgr = new GlideRecord('sys_choice');
+		columnsgr.addQuery('name', table_name);
+		columnsgr.addQuery('element', 'state');
+		columnsgr.addQuery('value', data.state_array[i]);
+		columnsgr.query();
+		if(columnsgr.next()) {
+			data.state_columns.push(columnsgr.label+'');
+		} else {
+			var columnstaskgr = new GlideRecord('sys_choice');
+			columnstaskgr.addQuery('name', 'task');
+			columnstaskgr.addQuery('element', 'state');
+			columnstaskgr.addQuery('value', data.state_array[i]);
+			columnstaskgr.query();
+			if(columnstaskgr.next()) data.state_columns.push(columnstaskgr.label+'');
+		}
+	}
+
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin-eduque&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-07-17 16:04:26&lt;/sys_created_on&gt;&lt;sys_id&gt;fa27c6ee4fdfd3000d952b8ca310c757&lt;/sys_id&gt;&lt;sys_mod_count&gt;129&lt;/sys_mod_count&gt;&lt;sys_name&gt;Task Status&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_fa27c6ee4fdfd3000d952b8ca310c757&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin-eduque&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-08-10 23:31:03&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="widget"&gt;
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;th&gt;
+        Record
+      &lt;/th&gt;
+      &lt;th ng-repeat="state in data.state_columns"&gt;{{state}}&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr ng-repeat="record in data.records"&gt;
+      &lt;td&gt;
+        {{record.number}} - {{record.short_description}}
+      &lt;/td&gt;
+      &lt;td ng-repeat="state in data.state_array"&gt;
+        &lt;ng-container ng-if="record.state == state"&gt;
+          ⚫
+        &lt;/ng-container&gt;
+        &lt;ng-container ng-if="record.state &gt; state"&gt;
+          ○
+        &lt;/ng-container&gt;
+        &lt;ng-container ng-if="record.state &lt; state"&gt;
+          ○
+        &lt;/ng-container&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+    &lt;ng-container ng-if="data.limit_reached" class="footerquery"&gt;
+      {{data.tooltip}} Results limited to first 100 records.
+    &lt;/ng-container&gt;
+    &lt;ng-container ng-if="!data.limit_reached" class="footerquery"&gt;
+      {{data.tooltip}} Found {{data.record_count}} records.
+    &lt;/ng-container&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1696706127</payload_hash>
+<remote_update_set display_value="IET Task Status Portal Page">3f04d7564f3fd3400d952b8ca310c771</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-10 23:33:17</sys_created_on>
+<sys_id>b304d7564f3fd3400d952b8ca310c773</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165262dd9360000001</sys_recorded_at>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-10 23:33:17</sys_updated_on>
+<table/>
+<target_name>Task Status</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>0383dfd2f83fd34080f7312519f9623f</update_guid>
+<update_guid_history>0383dfd2f83fd34080f7312519f9623f:-1696706127,91d39c0fa11f1700841d5bc32df0504f:-809743675,27c3d00fd81f1700edf63fc307b22662:467153189,7bb3d80fb11f1700be9378dab148b567:1940583359,64b31c0fa81f17005af611a0a43d6af5:1137449429,9aa31c0f451f170058ad6454a024ad5d:-1791717387,1f931c0f9d1f1700a8ab23c8231039ee:1083466773,33831c0f101f17005bbaea1b91c4be57:152437021,0683940fe81f17006a19d7499358b0c4:1727251951,ee73d80fde1f1700424165d1273a9360:-1246051175,ce63180fc61f17008faf0e44051ca66f:-809511612,e143140f291f1700c0b1b16aef5a0a1b:-893508371,c333580fbb1f17005ea95be91a04c818:705086485,a523180fd61f1700ce676ba344e55569:211024937,aa13d40fc61f1700e1445ef4eabf3be2:2046057189,b003140f281f1700ff52122f59f9d704:519291685,7b89c487091f170021bd96d03f4dec70:1274945253,ba896ea29c531700e7df38762b7095ab:-1847642301,30892e22f753170025be3950c71810a4:2024982729,e4466662625317003254378e2f2c08e9:1052724688,5de4aa22d75317004b036fde89b83781:-2109231241,36542a62a9531700577f832895726a50:1438493657,e1e26a22f8531700ffacf81aa1eff88c:780383625,1d5226223b531700282f7e145355834a:889844745,494266eed9131700c3d1d8088b0f9c4d:-1303165271,0d322eee801317008f14dae186c351fa:-27400448,92a12eeedc1317003e27ca80a57ef621:140012429,db7126eed5131700a35425feb610faae:-99620770,d9616aeeca131700924aba782713cc5c:-1101599325,264122ee0b1317009e1459aa299e94e1:1048545866,87f066eed61317007b05cca64e8bfb9f:-1734651907,37d026ee8f13170071a337e099176a44:-1768379715,7cd0e2ee88131700f66a5e7f2fd7eb8b:-1968132415,a5b06eae051317007d27cbdf22126693:-1960261544,b9206eae071317000f53211c7f9f5fb4:-1947105771,46ffd6ae66131700920592bc60f498f1:-1584931050,45df5aae7b131700af5ea7fa429647a1:40778803,93bf1aae84131700c50c8197987c4f9c:-1169040913,59afd6ae501317005f07048386fd22ad:339114154,959f96ae601317005786309873b2c4b4:1016031669,4bae962ef513170074e308ce2cf0aaa2:1319014626,3ffd1aeac91317008dba2f8b182d37d0:-1029337511,aced162e5613170083ffd9e35a313ebd:-160212053,a0dd9a2e201317008a0ce06eec4c8a08:542979654,abadda2e831317000d0d74a91a8682e1:-1170516123,c78d526ea1131700f2b97bd2b53b180b:-309859294,b8ecda2eae1317005f1a3d4f7452f3b4:713112691,89dcda2e6d131700b7a17c35f04a0a03:-1426530934,f6bc1a2e15131700b8a307de2ea8d2b4:463772880,2fac162ec713170004d668dd1e7ed1e8:811237953,eb9cd22e8f13170053ff9466dfdcb5cc:-695041189,e49cd2aa7813170021ad43b3ebfb674d:-691639389,c47c16aa40131700bd9395db71e9e7ff:-1589201978,054c5aea8e1317007580cc06bf7a8f96:786760119,0a3c9aaa72131700faee16186eff1443:-206526057,ba1cd22ea513170016c9a107c772568a:786760119,ef1adeaabf13170077377d0402a5c30b:-891620549,64f9deaaf4131700171a7fe3d487128f:1611408798,80e95eaa02131700284077b3f1203fa3:-1766602317,dcd95eaaf81317007d1ccb92f3837603:652747410,88c9daaad4131700d070647712069b9e:-2040346683,a5b91eaa28131700c2748cc6e541a4fd:538076328,5b89daaadd1317001699e0d1107e0771:352985178,fbe896aaa713170056f343d320ee1370:731438212,59d856aa0b131700169a869607132578:-1708646660,f0c852aa16131700fa81534b47533d76:1037092162,ca985e2a1b131700c33f63b9e90674d4:1319017479,3988122a4d131700a6cb008789dd24fc:1423670920,987852aa551317003061d8aaa5857c6f:1081587876,d848de6ace131700acfbefa59b51037b:2052113698,d266126aec131700ed342f00e94023f7:105245945,f3069e2ac51317008b59479090b94654:756757337,9506da2aa4131700f9d1bd7af220dd99:-800782375,faf55e2a44131700e856c4c41014b839:-606599408,02c5da2a02131700966217431568286a:239339437,4cc5562aa31317009b4ceb7f69557fa8:490822388,0ea5dee66813170015e1ced9771cbd4d:1580838018,af35962abc131700d047f85c731c5c90:-480002468,3f1556e6eb1317002f36f3cc79bc86a1:-629776274,c5a456e6421317000209bb9813a9cffc:-93393290,f594122a7b1317009d248fb68758307b:-844871692,1c74dee6401317007c9cc7f8c871a83a:882802534,a5445ee62c131700de409a8621a16392:1891683177,7f341ee6f71317009427dfb00f51a6a0:809020023,993492e6241317002b61e7387dd8396b:-1459636034,922416e6751317003d794e1840e9dbce:1486391527,72a3d6e666131700a39ad5b45f97f909:98455597,bf9356e6161317002a67eadc5bc49ff5:-1560574481,ca835a666c1317004b768765dde1e090:98455597,7f6392e6ab131700fc41cbbd61111fe9:308724309,45639aa60b1317000d8487bcbef322e5:1532857257,395316e6d3131700608db68b46f582c7:-1926816099,371392e65413170023cc52d5307857e3:1139180237,491392e6401317003504466341ec6e64:-812971792,52f252e68513170051c89114235b6e32:-1172138416,ea22da663a1317005013aacdce4af3ad:-41557702,b612da66de131700e06a7ef482fb0de3:1936800904,55f0d6267a131700a53df2b507389a9f:-1719097692,2dc05a66b1131700d2a93cc6371ba6bb:527750340,44601a263213170057b643527590c976:-1748549261,af30d6264a1317004a2c9873c18b3ad0:1713128646,23205e266c1317004f5b3477305efcc8:-1248916616,cede8626ab131700efc06baede8af3d6:-1788118336,34ce8e26121317008594d19a90807c1c:-67168800,c7be4626cd131700388ef0649a01278b:34435914,9e1ecae21a131700708f69f80675eb6e:-278272295,260ec626a81317008f298b5932fee28d:-2016155161,05fd8626a51317008e49665a7ecc257b:1518243737,36dd0ae27d13170049aff144bb8643e5:-996438977,ad7dc6e2631317005d64da218f32c300:1068581575,f33c46e2c3131700e7a9302293f3e644:-497866922,772c86e2de131700066fb2f2f3bd6bfa:2079285879,0d2c06e28e1317004a6046955eea0747:2050592564,5e1c46e29413170004cd96030eae9ab9:-1742590129,0c1c06e272131700c8a25284eafb05f0:-1503815632,040cc6a2151317009b5d858486e6af6d:1727781400,24ebcaa2361317002c307dbc4adf9d03:-152060343,6b9b42e269131700a499e2f05a811100:-1256465390,7afacaa235131700df3ed28e53799e78:-2095656989,21fa46a2ac13170022a1569992ba0812:-992879633,8aea42625013170017a84b8e00973a2b:-2095656989,4faa46a297131700d25c9e71fab9a4fd:-157508323,199a426286131700134c41d58fb92f20:-2095656989,8f8ac2a2561317008247246c29714c57:-495753781,997ac222631317003c17c3d367da2078:-2095656989,904ac2228b131700cff0eb1f07829f43:-495753781,e53ac2a2c51317009f4620daedb43438:-2095656989,d5878eee58dfd300cfdcdd0963bcc928:-913783086,6d578eee4adfd3001ebb51bcdb5dfb9b:94511562,7227c6eeaadfd300e1b856094dd8d159:1811215988</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_47a3dfd24f3fd3400d952b8ca310c75d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Task Status - Container 1</name><order>1</order><sp_page display_value="task_status">df33dbd24f3fd3400d952b8ca310c7a3</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin-eduque</sys_created_by><sys_created_on>2018-08-10 23:31:36</sys_created_on><sys_id>47a3dfd24f3fd3400d952b8ca310c75d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Task Status - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_47a3dfd24f3fd3400d952b8ca310c75d</sys_update_name><sys_updated_by>admin-eduque</sys_updated_by><sys_updated_on>2018-08-10 23:31:36</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>702583643</payload_hash>
+<remote_update_set display_value="IET Task Status Portal Page">3f04d7564f3fd3400d952b8ca310c771</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-10 23:33:17</sys_created_on>
+<sys_id>b704d7564f3fd3400d952b8ca310c772</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165262e57f60000001</sys_recorded_at>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-10 23:33:17</sys_updated_on>
+<table/>
+<target_name>Task Status - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>cba3dfd2643fd3406a820e2f95cbe25e</update_guid>
+<update_guid_history>cba3dfd2643fd3406a820e2f95cbe25e:702583643</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_3227c6ee4fdfd3000d952b8ca310c75c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Task Status - Test Page - Container 1</name><order>1</order><sp_page display_value="task_status">7e27c6ee4fdfd3000d952b8ca310c759</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin-eduque</sys_created_by><sys_created_on>2018-07-17 16:04:26</sys_created_on><sys_id>3227c6ee4fdfd3000d952b8ca310c75c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Task Status - Test Page - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_3227c6ee4fdfd3000d952b8ca310c75c</sys_update_name><sys_updated_by>admin-eduque</sys_updated_by><sys_updated_on>2018-07-17 16:04:26</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>1201897098</payload_hash>
+<remote_update_set display_value="IET Task Status Portal Page">3f04d7564f3fd3400d952b8ca310c771</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-10 23:33:17</sys_created_on>
+<sys_id>f304d7564f3fd3400d952b8ca310c772</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165262c8a9e0000001</sys_recorded_at>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-10 23:33:17</sys_updated_on>
+<table/>
+<target_name>Task Status - Test Page - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>1e331b92a13fd34092c3eb6cac80df40</update_guid>
+<update_guid_history>1e331b92a13fd34092c3eb6cac80df40:1201897098,f227c6ee3bdfd300c7f7510dc566db5d:1201897098</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_60b31fd24f3fd3400d952b8ca310c786</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Task Status - Container 1">47a3dfd24f3fd3400d952b8ca310c75d</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin-eduque</sys_created_by><sys_created_on>2018-08-10 23:31:41</sys_created_on><sys_id>60b31fd24f3fd3400d952b8ca310c786</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_60b31fd24f3fd3400d952b8ca310c786</sys_update_name><sys_updated_by>admin-eduque</sys_updated_by><sys_updated_on>2018-08-10 23:31:41</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-749285406</payload_hash>
+<remote_update_set display_value="IET Task Status Portal Page">3f04d7564f3fd3400d952b8ca310c771</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-10 23:33:17</sys_created_on>
+<sys_id>ff04d7564f3fd3400d952b8ca310c772</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165262e6e790000001</sys_recorded_at>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-10 23:33:17</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>64b31fd2a13fd3404924c75f6bcb9987</update_guid>
+<update_guid_history>64b31fd2a13fd3404924c75f6bcb9987:-749285406</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
