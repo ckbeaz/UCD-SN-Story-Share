@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-08-11 00:05:22">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>IET Advanced Filters</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value="IET Advanced Filters">316b579a4f7fd3400d952b8ca310c7bd</remote_base_update_set>
+<remote_parent_id/>
+<remote_sys_id>50fa139a4f7fd3400d952b8ca310c7f0</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-11 00:05:22</sys_created_on>
+<sys_id>316b579a4f7fd3400d952b8ca310c7bd</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-11 00:05:22</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>IET Advanced Filters</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value="IET Advanced Filters">316b579a4f7fd3400d952b8ca310c7bd</remote_base_update_set>
+<remote_parent_id/>
+<remote_sys_id>50fa139a4f7fd3400d952b8ca310c7f0</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-11 00:05:22</sys_created_on>
+<sys_id>316b579a4f7fd3400d952b8ca310c7bd</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-11 00:05:22</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>IET STRY0036692 Bug: Ability to filter watch list by email address</name>
+<origin_sys_id/>
+<parent display_value="IET Advanced Filters">316b579a4f7fd3400d952b8ca310c7bd</parent>
+<release_date/>
+<remote_base_update_set display_value="IET Advanced Filters">316b579a4f7fd3400d952b8ca310c7bd</remote_base_update_set>
+<remote_parent_id/>
+<remote_sys_id>59aa5b5a4f7fd3400d952b8ca310c716</remote_sys_id>
+<state>in_hierarchy</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-11 00:05:22</sys_created_on>
+<sys_id>356b579a4f7fd3400d952b8ca310c7be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-11 00:05:22</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_11eeedab0fa817406717590be1050ea6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;collection&gt;global&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Report Helpers 2&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[//
+// Get the email address of the logged in user or username
+//
+
+function getUserEmail(name) {
+	if (name.indexOf('@')&gt;-1){
+		return name;
+	} else if (name){
+		var gr = new GlideRecord('sys_user');
+		gr.addQuery('user_name', name);
+		gr.query();
+		if (gr.next()){
+			return gr.email;
+		} else {
+			return 'no user found';
+		}
+	} else {
+		var u = gs.getUserID();
+		var gr2 = new GlideRecord('sys_user');
+		gr2.get(u);
+		return gr2.email;
+	}
+}
+
+//
+// Return items with this tag
+//
+function filterTags(operator, tag) {
+    if (operator == '', operator == null, tag == '' || tag == null) return 'Missing Operator or Tag';
+
+    var gr3 = new GlideRecord('label_entry');
+
+    if (operator == 'is' || operator == '=') {
+        gr3.addQuery('label.name', tag);
+    } else if (operator == 'starts with') {
+        gr3.addQuery('label.name', 'STARTSWITH', tag);
+    } else if (operator == 'ends with') {
+        gr3.addQuery('label.name', 'ENDSWITH', tag);
+    } else if (operator == 'contains') {
+        gr3.addQuery('label.name', 'CONTAINS', tag);
+    } else {
+        return 'Invalid Operator';
+    }
+
+    var currentUser = gs.getUserID() + '';
+    var labelArray = [];
+
+    var gr4 = new GlideRecord('label_user_m2m');
+    gr4.addQuery('user', currentUser);
+    gr4.query();
+    while (gr4.next()) {
+        labelArray.push(gr4.label + '');
+    }
+
+    var gr5 = new GlideRecord('label');
+    gr5.addQuery('owner', currentUser);
+    gr5.addQuery('type', 'standard');
+    gr5.query();
+    while (gr5.next()) {
+        if (labelArray.indexOf(gr5.sys_id) == -1) {
+            labelArray.push(gr5.sys_id + '');
+        }
+    }
+
+    var sysIDs = [];
+
+    gr3.query();
+    while (gr3.next()) {
+        if (labelArray.indexOf(gr3.label.sys_id + '') &gt; -1) {
+            sysIDs.push(gr3.table_key + '');
+        }
+    }
+    gs.log('earl test: ' + labelArray);
+
+    var answer = sysIDs + '';
+    return answer;
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin-eduque&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-03-05 23:59:38&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;11eeedab0fa817406717590be1050ea6&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Report Helpers 2&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_11eeedab0fa817406717590be1050ea6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin-eduque&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-08-11 00:04:03&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=11eeedab0fa817406717590be1050ea6"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>872348626</payload_hash>
+<remote_update_set display_value="IET Advanced Filters">316b579a4f7fd3400d952b8ca310c7bd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-11 00:05:22</sys_created_on>
+<sys_id>756b579a4f7fd3400d952b8ca310c7bd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165264c10140000001</sys_recorded_at>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-11 00:05:22</sys_updated_on>
+<table>global</table>
+<target_name>Report Helpers 2</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>621b939a737fd3404ebc9d2e1de79b11</update_guid>
+<update_guid_history>621b939a737fd3404ebc9d2e1de79b11:872348626,672375af76a81740b2bd2a21957d1449:-539490209,2970b12fa3a817406d191a97340a62ff:-1164978377,f73fe5ebb7a81740764d112948662942:-1754693103,91eee1eb1da8174003974a4bc13c607f:1531376565</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_script_11eeedab0fa817406717590be1050ea6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_label/&gt;&lt;action_name/&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_run_at&gt;server&lt;/action_run_at&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;application/&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;collection&gt;global&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Report Helpers 2&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;read_access_action&gt;false&lt;/read_access_action&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[//
+// Get the email address of the logged in user or username
+//
+
+function getUserEmail(name) {
+	if (name.indexOf('@')&gt;-1){
+		return name;
+	} else if (name){
+		var gr = new GlideRecord('sys_user');
+		gr.addQuery('user_name', name);
+		gr.query();
+		if (gr.next()){
+			return gr.email;
+		} else {
+			return 'no user found';
+		}
+	} else {
+		var u = gs.getUserID();
+		var gr2 = new GlideRecord('sys_user');
+		gr2.get(u);
+		return gr2.email;
+	}
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin-eduque&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-03-05 23:59:38&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;11eeedab0fa817406717590be1050ea6&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Report Helpers 2&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_11eeedab0fa817406717590be1050ea6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin-eduque&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-03-06 00:18:21&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-539490209</payload_hash>
+<remote_update_set display_value="IET STRY0036692 Bug: Ability to filter watch list by email address">356b579a4f7fd3400d952b8ca310c7be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-11 00:05:22</sys_created_on>
+<sys_id>b96b579a4f7fd3400d952b8ca310c7be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165264a3d5c0000001</sys_recorded_at>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-11 00:05:22</sys_updated_on>
+<table>global</table>
+<target_name>Report Helpers 2</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>672375af76a81740b2bd2a21957d1449</update_guid>
+<update_guid_history>672375af76a81740b2bd2a21957d1449:-539490209,2970b12fa3a817406d191a97340a62ff:-1164978377,f73fe5ebb7a81740764d112948662942:-1754693103,91eee1eb1da8174003974a4bc13c607f:1531376565</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_filter_option_dynamic_381e45b70fa057406717590be1050e1c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_filter_option_dynamic"><sys_filter_option_dynamic action="INSERT_OR_UPDATE"><active>true</active><available_for_default>false</available_for_default><available_for_filter>true</available_for_filter><available_for_ref_qual>false</available_for_ref_qual><field_type display_value="List">e3f24e9cc0a80166007d6acccef476e9</field_type><filter_by_schedule/><label>My Email</label><order>101</order><roles/><script>gs.getUser().email</script><script_reference_id/><script_reference_table/><sys_class_name>sys_filter_option_dynamic</sys_class_name><sys_created_by>admin-eduque</sys_created_by><sys_created_on>2018-03-06 16:14:44</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>381e45b70fa057406717590be1050e1c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>My Email</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_filter_option_dynamic_381e45b70fa057406717590be1050e1c</sys_update_name><sys_updated_by>admin-eduque</sys_updated_by><sys_updated_on>2018-03-06 16:19:42</sys_updated_on><table>sys_user</table><table_containing_filter/></sys_filter_option_dynamic></record_update>]]></payload>
+<payload_hash>-632300444</payload_hash>
+<remote_update_set display_value="IET STRY0036692 Bug: Ability to filter watch list by email address">356b579a4f7fd3400d952b8ca310c7be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin-eduque</sys_created_by>
+<sys_created_on>2018-08-11 00:05:22</sys_created_on>
+<sys_id>f56b579a4f7fd3400d952b8ca310c7be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165264a3d550000001</sys_recorded_at>
+<sys_updated_by>admin-eduque</sys_updated_by>
+<sys_updated_on>2018-08-11 00:05:22</sys_updated_on>
+<table>sys_user</table>
+<target_name>My Email</target_name>
+<type>Dynamic Filter Options</type>
+<update_domain>global</update_domain>
+<update_guid>393fc1b7fda057404cd9e1e90076449c</update_guid>
+<update_guid_history>393fc1b7fda057404cd9e1e90076449c:-632300444,7c1e45b79ca05740daacee728c11d11d:-782441787</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
