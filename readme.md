@@ -2,7 +2,17 @@
 
 ## Quick Links
 
-* [Advanced Filters](#advanced-filters)
+* [Advanced Filters](https://github.com/earlduque/UCD-SN-Story-Share#advanced-filters)
+* [Attach KB articles to Incidents](https://github.com/earlduque/UCD-SN-Story-Share#attach-kb-articles-to-incidents)
+* [Automated Scrum Tasks and Story Enhancements](https://github.com/earlduque/UCD-SN-Story-Share#automated-scrum-tasks-and-story-enhancements)
+* [Automatically start a catalog item based on a previous RITM](https://github.com/earlduque/UCD-SN-Story-Share#automatically-start-a-catalog-item-based-on-a-previous-ritm)
+* [Queue Manager](https://github.com/earlduque/UCD-SN-Story-Share#queue-manager)
+* [SLA Definition Enhancements](https://github.com/earlduque/UCD-SN-Story-Share#sla-definition-enhancements)
+* [Task Status in Service Portal](https://github.com/earlduque/UCD-SN-Story-Share#task-status-in-service-portal)
+* [ServiceHub](https://github.com/earlduque/UCD-SN-Story-Share#servicehub)
+* [Raffle Drawing App](https://github.com/earlduque/UCD-SN-Story-Share#raffle-drawing-app)
+* [Custom autofill](https://github.com/earlduque/UCD-SN-Story-Share#custom-autofill)
+* [Better Order Guides in the portal](https://github.com/earlduque/UCD-SN-Story-Share#better-order-guides-in-the-portal)
 
 ## What is going on here?
 This repository is filled with update sets that were developed at UC Davis (or links to other repositories that are sourced applications) for UC sharing use at UC CSC.
@@ -16,7 +26,7 @@ Contact Earl Duque at eduque@ucdavis.edu or find me on the UC Tech slack workspa
 # Updates/Stories/Enhancements
 
 ## Advanced Filters
-#advanced-filters
+
 **Description:** Adds a new dynamic filter to be able to say "list contains an email address". Adds new filter queries that allows better tag filtering. Adds new filter queries that allows for email addresses.
 
 **Difficulty to implement:** None.
