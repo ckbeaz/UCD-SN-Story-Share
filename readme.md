@@ -1,5 +1,9 @@
 # UC Davis - ServiceNow Story Share
 
+## Quick Links
+
+* [Advanced Filters](#advanced-filters)
+
 ## What is going on here?
 This repository is filled with update sets that were developed at UC Davis (or links to other repositories that are sourced applications) for UC sharing use at UC CSC.
 
@@ -12,7 +16,7 @@ Contact Earl Duque at eduque@ucdavis.edu or find me on the UC Tech slack workspa
 # Updates/Stories/Enhancements
 
 ## Advanced Filters
-
+#advanced-filters
 **Description:** Adds a new dynamic filter to be able to say "list contains an email address". Adds new filter queries that allows better tag filtering. Adds new filter queries that allows for email addresses.
 
 **Difficulty to implement:** None.
