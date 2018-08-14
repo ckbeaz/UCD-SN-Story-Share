@@ -9,6 +9,8 @@ Below you will find an explanation of each application along with descriptions o
 ## Questions?
 Contact Earl Duque at eduque@ucdavis.edu or find me on the UC Tech slack workspace.
 
+## Updates/Stories/Enhancements
+
 ###### Advanced Filters
 
 Description: Adds a new dynamic filter to be able to say "list contains an email address". Adds new filter queries that allows better tag filtering. Adds new filter queries that allows for email addresses.
