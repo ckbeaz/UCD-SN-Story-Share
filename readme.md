@@ -9,6 +9,7 @@
 * [Queue Manager](https://github.com/earlduque/UCD-SN-Story-Share#queue-manager)
 * [SLA Definition Enhancements](https://github.com/earlduque/UCD-SN-Story-Share#sla-definition-enhancements)
 * [Task Status in Service Portal](https://github.com/earlduque/UCD-SN-Story-Share#task-status-in-service-portal)
+* [New Admin Notification]()
 * [ServiceHub](https://github.com/earlduque/UCD-SN-Story-Share#servicehub)
 * [Raffle Drawing App](https://github.com/earlduque/UCD-SN-Story-Share#raffle-drawing-app)
 * [Custom autofill](https://github.com/earlduque/UCD-SN-Story-Share#custom-autofill)
@@ -87,6 +88,14 @@ Contact Earl Duque at eduque@ucdavis.edu or find me on the UC Tech slack workspa
 **Difficulty to implement:** None. No pre-configuration needed.
 
 **Instructions:** Import and commit this [update set](https://github.com/earlduque/UCD-SN-Story-Share/tree/master/Task%20Status%20in%20Service%20Portal) then go to /sp?id=task_status (or substitute sp for your portal name)
+
+## New Admin Notification
+
+**Description:** Creates an event when someone gains admin role (via user roles or via a group that has the role) and sends a notification to the system administrator account (change this on the notification to whatever you want). The notification says "X has granted Y admin access on instance_name]
+
+**Difficulty to implement:** Low. If the system administrator account isn't attached to anyone then you have to modify the notification to pick a new person to notify.
+
+**Instructions:** Go to https://github.com/earlduque/New-Admin-Notification and fork it to your own github account, take note of the new URL that is created for the repository. In your instance, go to System Applications -> Studio. Upon studio launching, select "Import from source control" and input the URL from ealier along with your github username and password, and select "Import".
 
 ## ServiceHub
 
