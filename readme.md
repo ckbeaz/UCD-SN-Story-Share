@@ -31,7 +31,7 @@ Contact Earl Duque at eduque@ucdavis.edu or find me on the UC Tech slack workspa
 
 **Difficulty to implement:** None.
 
-**Instructions:** Import and commit update set.
+**Instructions:** Import and commit [update set](https://github.com/earlduque/UCD-SN-Story-Share/tree/master/Advanced%20Filters).
 
 ## Attach KB articles to Incidents
 
@@ -39,7 +39,7 @@ Contact Earl Duque at eduque@ucdavis.edu or find me on the UC Tech slack workspa
 
 **Difficulty to implement:** High. Needs knowledge of events, mail scripts, notification configuration, and portal page configuration.
 
-**Instructions:** Import and commit update set. Edit mail script to point to the knowledge bases you need, change any URL/page links to your portal. Add the new widget to a portal page for landing. Make sure mail script points to that portal page.
+**Instructions:** Import and commit [update set](https://github.com/earlduque/UCD-SN-Story-Share/tree/master/Attach%20KB%20articles%20to%20Incidents). Edit mail script to point to the knowledge bases you need, change any URL/page links to your portal. Add the new widget to a portal page for landing. Make sure mail script points to that portal page.
 
 ## Automated Scrum Tasks and Story Enhancements
 
@@ -47,7 +47,7 @@ Contact Earl Duque at eduque@ucdavis.edu or find me on the UC Tech slack workspa
 
 **Difficulty to implement:** Low. Requires to be on Agile 2.0
 
-**Instructions:** Ensure you have upgraded to Agile 2.0 and then import and commit update set. If you had any rm_story form configuration changes, make sure to add those back in because this update set will overwrite the form design.
+**Instructions:** Ensure you have upgraded to Agile 2.0 and then import and commit [update set](https://github.com/earlduque/UCD-SN-Story-Share/tree/master/Automated%20Scrum%20Tasks%20and%20Story%20Enhancements). If you had any rm_story form configuration changes, make sure to add those back in because this update set will overwrite the form design.
 
 ## Automatically start a catalog item based on a previous RITM
 
@@ -55,7 +55,7 @@ Contact Earl Duque at eduque@ucdavis.edu or find me on the UC Tech slack workspa
 
 **Difficulty to implement:** Low. Inclusion of variable set is easy but you have to figure out how you want to provide the "resubmit" link to the user.
 
-**Instructions:** Import and commit the update set. Add new variable set to a catalog item. Go to the catalog item submission form and add &sysparm_ritm=[sys_id] to the URL.
+**Instructions:** Import and commit the [update set](https://github.com/earlduque/UCD-SN-Story-Share/tree/master/Automatically%20start%20a%20catalog%20item%20based%20on%20a%20previous%20RITM). Add new variable set to a catalog item. Go to the catalog item submission form and add &sysparm_ritm= + sys_id to the URL.
 
 ## Queue Manager
 
@@ -63,7 +63,7 @@ Contact Earl Duque at eduque@ucdavis.edu or find me on the UC Tech slack workspa
 
 **Difficulty to implement:** Low. Some knowledge of form design is needed to ensure your previous custom form design doesn't disappear.
 
-**Instructions:** Import and commit this update set. If you had any sys_user_group form configuration changes, make sure to add those back in because this update set will overwrite the form design.
+**Instructions:** Import and commit this [update set](https://github.com/earlduque/UCD-SN-Story-Share/tree/master/Queue%20Manager). If you had any sys_user_group form configuration changes, make sure to add those back in because this update set will overwrite the form design.
 
 ## SLA Definition Enhancements
 
@@ -71,7 +71,7 @@ Contact Earl Duque at eduque@ucdavis.edu or find me on the UC Tech slack workspa
 
 **Difficulty to implement:** Low, knowledge of field creation is needed.
 
-**Instructions:** The update set expects a reference field called u_owner on the sys_user_group table, you'll need to add this field in first or else you will need to modify the update set to avoid errors. Once this is done you can import and commit this update set.
+**Instructions:** The update set expects a reference field called u_owner on the sys_user_group table, you'll need to add this field in first or else you will need to modify the update set to avoid errors. Once this is done you can import and commit this [update set](https://github.com/earlduque/UCD-SN-Story-Share/tree/master/SLA%20Definition%20Enhancements).
 
 ## Task Status in Service Portal
 
@@ -86,7 +86,7 @@ Contact Earl Duque at eduque@ucdavis.edu or find me on the UC Tech slack workspa
 
 **Difficulty to implement:** None. No pre-configuration needed.
 
-**Instructions:** Import and commit this update set then go to /sp?id=task_status (or substitute sp for your portal name)
+**Instructions:** Import and commit this [update set](https://github.com/earlduque/UCD-SN-Story-Share/tree/master/Task%20Status%20in%20Service%20Portal) then go to /sp?id=task_status (or substitute sp for your portal name)
 
 ## ServiceHub
 
